@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #F4CCE9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .payment-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow here */
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+            color: 
+            hwb(293 1% 96%);
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            color: #555;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+            transition: box-shadow 0.3s ease-in-out; /* Added transition for smooth shadow effect */
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.6); /* Added focus shadow */
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #6A1E55;
+            border: none;
+            border-radius: 4px;
+            color: hsl(0, 0%, 100%);
+            cursor: pointer;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background: #3B1C32;
+        }
+
+        .card-details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-details .form-group {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .card-details .form-group:last-child {
+            margin-right: 0;
+        }
+
+        .message {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .message a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .message a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    
+<div class="payment-container">
+    <h2>Admission Payment</h2>
+    <p>Complete your payment for a comfortable stay!</p>
+
+    <form action="" method="POST">
+        <div class="form-group">
+            <label>Student Name</label>
+            <input type="text" name="student_name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Cast</label>
+            <input type="text" name="caste" placeholder="Enter your caste" required>
+        </div>
+
+        <div class="form-group">
+            <label>Amount (in $)</label>
+            <input type="number" name="amount" placeholder="Enter amount" required>
+        </div>
+
+        <div class="form-group">
+            <label>Payment Method</label>
+            <select name="payment_method" required>
+                <option value="" disabled selected>Select payment method</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="upi">UPI</option>
+                <option value="net-banking">Net Banking</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Card Number</label>
+            <input type="text" name="card_number" placeholder="1234 5678 9012 3456" maxlength="16" required>
+        </div>
+
+        <div class="form-group">
+            <label>Expiry Date</label>
+            <input type="month" name="expiry_date" required>
+        </div>
+
+        <div class="form-group">
+            <label>CVV</label>
+            <input type="text" name="cvv" placeholder="123" maxlength="3" required>
+        </div>
+
+        <button type="submit">Pay Now</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Classroom</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Importing Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Section Styling */
+    .classroom-section {
+      width: 100%;
+      height: 100vh; /* Full viewport height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #73C7C7;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .classroom-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 1200px;
+      width: 100%;
+      background-color: #fabcdb;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .classroom-container img {
+      width: 50%; /* The image will occupy half the section */
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .classroom-info {
+      padding: 20px;
+      width: 50%; /* Information section will occupy the other half */
+    }
+
+    .classroom-info h2 {
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .classroom-info p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .classroom-info ul {
+      margin-top: 20px;
+      list-style-type: none;
+    }
+
+    .classroom-info ul li {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    /* Hover Effect for Image */
+    .classroom-container img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+      color: rgb(255, 0, 0);
+    }
+
+    /* Gallery Section */
+    .gallery-section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+      background-color: #f1f1f1;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .gallery-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-container img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Responsive Design for Gallery */
+    @media (max-width: 768px) {
+      .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Student Classroom Section -->
+  <section class="classroom-section">
+    <div class="classroom-container">
+      <img src="c:\Users\rohini doye\OneDrive\Documents\co_pics\gps4.jpg" alt="Student Classroom"> <!-- Replace with your classroom image -->
+      <div class="classroom-info">
+        <h2>Modern Classroom Environment</h2>
+        <p>Our classrooms are designed to provide a conducive learning environment for students, equipped with state-of-the-art technology and ergonomic furniture. The spacious and well-lit classrooms ensure that students have an optimal learning experience.</p>
+
+        <ul>
+          <li><strong>Seating Capacity:</strong> 40-50 students</li>
+          <li><strong>Technology:</strong> Smartboards and Projectors</li>
+          <li><strong>Facilities:</strong> Air Conditioning, Wi-Fi</li>
+          <li><strong>Comfort:</strong> Adjustable Desks and Chairs</li>
+          <li><strong>Ambiance:</strong> Bright and Well-Ventilated</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section class="gallery-section">
+    <div class="gallery-container">
+      <img src="c:\Users\rohini doye\OneDrive\Documents\co_pics\gps5.jpg" alt="Classroom Image 1"> <!-- Replace with actual image paths -->
+      <img src="c:\Users\rohini doye\OneDrive\Documents\co_pics\gps5.jpg" alt="Classroom Image 2">
+      <img src="c:\Users\rohini doye\OneDrive\Documents\co_pics\gps5.jpg" alt="Classroom Image 3">
+      <img src="c:\Users\rohini doye\OneDrive\Documents\co_pics\gps5.jpg" alt="Classroom Image 4">
+    </div>
+  </section>
+
+</body>
+</html>
